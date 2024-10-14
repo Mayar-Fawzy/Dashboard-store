@@ -4,9 +4,9 @@
   import { FormControl, FormGroup, Validators } from '@angular/forms';
   import {jwtDecode} from 'jwt-decode';
 
-import { ServService } from '../../Services/serv.service';
+import { ServService } from '../../../core/Services/serv.service';
 
-import { ToastService } from '../../Services/toast.service';
+import { ToastService } from '../../../core/Services/toast.service';
 
 
   @Component({
