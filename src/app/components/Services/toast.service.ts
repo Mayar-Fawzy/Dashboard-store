@@ -15,7 +15,7 @@ export class ToastService {
       timer: 3000,
       timerProgressBar: true,
       customClass: {
-        popup: 'custom-toast-zindex', 
+      
       },
       didOpen: (toast) => {
         toast.onmouseenter = Swal.stopTimer;
