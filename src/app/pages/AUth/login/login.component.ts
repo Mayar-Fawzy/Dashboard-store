@@ -2,11 +2,11 @@
   import { Component } from '@angular/core';
   import { Router } from '@angular/router';
   import { FormControl, FormGroup, Validators } from '@angular/forms';
-  import {jwtDecode} from 'jwt-decode';
+ 
 
-import { ServService } from '../../../core/Services/serv.service';
+import { ToastService } from 'src/app/components/Layouts/Toast/toast.service';
+import { AuthService } from 'src/app/core/Services/auth.service';
 
-import { ToastService } from '../../../core/Services/toast.service';
 
 
   @Component({
@@ -17,7 +17,7 @@ import { ToastService } from '../../../core/Services/toast.service';
   export class LoginComponent {
     errorr:string='';
     isloading = false;
-    constructor(private _ServService:ServService  ,private _router:Router,private _ToastService:ToastService){}
+    constructor(private _ServService:AuthService  ,private _router:Router,private _ToastService:ToastService){}
     LoginForrm:FormGroup=new FormGroup({
        
        
